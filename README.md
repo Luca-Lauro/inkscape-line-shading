@@ -27,10 +27,8 @@ Pure vector output: perfect for plotters and lasers.
 
 ## Examples
 
-Inline-style: 
 ![alt text](https://github.com/Luca-Lauro/inkscape-line-shading/blob/main/examples/sphere.png "sphere")
 
-Inline-style: 
 ![alt text](https://github.com/Luca-Lauro/inkscape-line-shading/blob/main/examples/multi-direction.png "multi-direction")
 
 ## Installation
