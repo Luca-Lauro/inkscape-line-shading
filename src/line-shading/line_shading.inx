@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <name>Line Shading</name>
+    <id>xyz.line_shading</id>
+
+    <!-- PARAMETRI -->
+    <param name="waveform" type="enum" gui-text="Waveform">
+        <option value="sin">Sine</option>
+        <option value="sin_b">Sine (Brute)</option>
+        <option value="saw">Saw</option>
+        <option value="square">Square</option>
+    </param>
+
+    <param name="modulation" type="enum" gui-text="Modulation">
+        <option value="both">Period + Amplitude</option>
+        <option value="period">Period only</option>
+        <option value="amplitude">Amplitude only</option>
+    </param>
+
+    <param name="angles" type="string" gui-text="Angles (comma-separated)">
+        0
+    </param>
+
+    <param name="line_spacing" type="float" gui-text="Line spacing (px)" min="0.1" max="200">
+        3.0
+    </param>
+
+    <param name="min_period" type="float" gui-text="Minimum period" min="0.1" max="2000">
+        2.0
+    </param>
+    <param name="max_period" type="float" gui-text="Maximum period" min="0.1" max="2000">
+        10.0
+    </param>
+
+    <param name="min_amplitude" type="float" gui-text="Minimum amplitude" min="0.1" max="2000">
+        0.2
+    </param>
+    <param name="max_amplitude" type="float" gui-text="Maximum amplitude" min="0.1" max="2000">
+        3.0
+    </param>
+
+    <param name="gamma" type="float" gui-text="Gamma" min="0.1" max="100">
+        1.0
+    </param>
+
+    <param name="line_width" type="float" gui-text="Line width" min="0.1" max="10">
+        0.3
+    </param>
+    <param name="units" type="string" gui-text="Units">px</param>
+
+    <param name="remove" type="boolean" gui-text="Remove original image">false</param>
+
+
+    <effect>
+        <object-type>image</object-type>
+        <effects-menu>
+            <submenu name="Line Shading"/>
+        </effects-menu>
+    </effect>
+
+
+    <script>
+        <command reldir="extensions" interpreter="python">line_shading.py</command>
+    </script>
+</inkscape-extension>
