@@ -13,7 +13,7 @@ Line Shading is an advanced extension for Inkscape that generates vector shading
 ## Key Features
 Constant density: Lines maintain the same distance in all directions.
 
-True cross-hatching: Specify angles such as 0, 45, 90, or 135 for a professional-looking line.
+True cross-hatching: Specify angles such as 0, 45, 90, or 135 for multiple line directions.
 
 Bilinear sampling: Luminance is precisely interpolated.
 
@@ -21,7 +21,7 @@ Advanced modulation: Period and amplitude vary based on luminance.
 
 Smart clipping: Lines do not extend beyond the image edges.
 
-Multiple waveforms: sin, saw, square, sin_b.
+Multiple waveforms: sin, sin_b, saw, square.
 
 Pure vector output: perfect for plotters and lasers.
 
